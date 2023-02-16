@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <nav></nav>
-    <div class="container">
-      <section class="background-img">
-        <article>
 
-        </article>
-      </section>
-    </div>
-    <main></main>
-  </body>
-  <script type="text/javascript" src="main.js"></script>
+<head>
+  <title>What's For Dinner?</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class='nav'>
+    <h3 class="title">What's for Dinner?</h3>
+    <button class="add-recipe-btn">ADD A RECIPE</button>
+  </nav>
+    <section class="parent1">
+      <div class="box">
+        <h3>What are you looking for?</h3>
+          <div class="radio-btn">
+            <input type="radio" id="side" value="side"><label for="side">Side</label>
+          </div>
+          <div class="radio-btn">
+            <input type="radio" id="Main Dish" value="Main Dish"><label for="Main Dish">Main Dish</label>  
+          </div>
+          <div class="radio-btn">
+            <input type="radio" id="Dessert" value="Dessert"><label for="Dessert">Dessert</label>  
+          </div>
+          <div class="radio-btn">
+            <input type="radio" id="Entire Meal" value="Entire Meal"><label for="Entire Meal">Entire Meal</label>  
+          </div>
+          <button class="lets-cook-btn">LET'S COOK!</button>
+      </div>
+      <div class="box" id="pot-img">
+      </div>
+    </section>
+</body>
+<script type="text/javascript" src="main.js"></script>
+
 </html>
