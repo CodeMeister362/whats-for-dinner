@@ -40,20 +40,12 @@ body {
 }
 
 .box {
-  width: auto;
+  width: 250px;
+  height: 220px;
   border: 10px;
   padding: 20px;
-  margin: 10px;
-  background-color: rgba(255, 255, 255, 0.42);
-}
-
-.box:nth-child(1) {
-  display: flex;
-  flex-direction: column;
-}
-
-.box:nth-child(2) {
-
+  margin: 30px;
+  background-color: rgba(255, 255, 255, 0.759);
 }
 
 .parent1 {
@@ -66,3 +58,22 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.radio-btn {
+  padding: 5px;
+}
+
+#pot-img {
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/Users/nate/Mod_1/whats-for-dinner/assets/cookpot.svg);  
+}
+
+.lets-cook-btn {
+  text-size-adjust: 20%;
+  background-color: #0fb9b1;
+  border-radius: 5px;
+  border: 0;
+  padding: 7px 40px 7px;
+  margin-top: 5px;
+}
