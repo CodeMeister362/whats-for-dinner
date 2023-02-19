@@ -1,21 +1,27 @@
 //querySeletor 
-var radioBtn = document.querySelector('#side'),
+var side = document.querySelector('#side'),
+    main = document.querySelector('#main-dish'),
     letsCookbtn = document.querySelector('.lets-cook-btn'),
     outPut = document.querySelector('#outPut'),
     hidePotImg = document.querySelector('#pot-img'),
     displaytxt = document.querySelector('.you-should-make');
  
-//event listener 
-radioBtn.addEventListener('click', getRandomRecipe);
-letsCookbtn.addEventListener('click', hidePot);
+//event listener
+letsCookbtn.addEventListener('click', hidePot, getRandomRecipe);
 //event handler
 function getRandomIndex(array) {
   return Math.floor(Math.random()*array.length)
 }
 
 function getRandomRecipe() {
-  var randomRecipeIndex = getRandomIndex(sideRecipes);
-  var randomRecipe = sideRecipes[randomRecipeIndex];
+  if (side.checked) {
+    var randomRecipeIndex = getRandomIndex(sideRecipes),
+        randomRecipe = sideRecipes[randomRecipeIndex];
+  }
+  if (main.checked) {
+    var randomRecipeIndex = getRandomIndex(mainRecipes),
+        randomRecipe = mainRecipes[randomRecipeIndex];
+  }
   document.querySelector('#array-output').textContent = randomRecipe
 }
 
