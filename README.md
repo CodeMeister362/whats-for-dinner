@@ -1,22 +1,22 @@
 # What's for Dinner? 
 
 ### Abstract:
-[//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
+I built an app that chooses a dish from three categories, or all three, for a user to cook. For example, if main dish is chosen and the button lets cook is clicked then the name of a dish will be displayed. The button can continously be clicked until the user finds a dish of their choice. 
 
 ### Installation Instructions:
-[//]: <> (What steps does a person have to take to get your app cloned down and running?)
+If you want to use my app just click on the green <> Code button on the home page of whats-for-dinner, copy the SSH, open your terminal and type git clone (paste SSH) and run. If that has executed properly type open index.html in your terminal and hit enter. 
 
 ### Preview of App:
-[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
+![Alt Text](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzIxZmY4ODhlMDIxNDBkMDJiNGU4M2IzYmMzNDNhNDIyYWM2MWNhZCZjdD1n/qcQvOmZe7BPbsPD97R/giphy.gif)
 
 ### Context:
-[//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+I worked on this project over 6 days and about 3hrs each day. I've completed 3 weeks of Turing Mod 1. 
 
 ### Contributors:
-[//]: <> (Who worked on this application? Link to their GitHubs.)
+[Nathan Chamberlain](https://github.com/CodeMeister362?tab=repositories)
 
 ### Learning Goals:
-[//]: <> (What were the learning goals of this project? What tech did you work with?)
+This project relly helped me solidfy some skills and ideas previously used on a random image project. Practice and repitition is very important so I'm glad I got to work on this project. 
 
 ### Wins + Challenges:
-[//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+Some wins I had on this project were using HTML and CSS for the first time. It was fun getting my feet wet with those two languages. I'm really looking forward to expanding my CSS knowledge. Initially had some challenges moving some boxes around and then refactoring my javascript for sure. 
