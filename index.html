@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>What's For Dinner?</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-</head>
-<body>
-  <nav class='nav'>
-    <h3 class="title">What's for Dinner?</h3>
-    <button class="add-recipe-btn">ADD A RECIPE</button>
-  </nav>
-    <section class="parent1">
-      <div class="box">
-        <h3>What are you looking for?</h3>
-          <div class="radio-btn">
-            <input type="radio" id="side" value="Side" name="btn"><label for="side">Side</label>
-          </div>
-          <div class="radio-btn">
-            <input type="radio" id="main-dish" value="Main Dish" name="btn"><label for="main-dish">Main Dish</label>  
-          </div>
-          <div class="radio-btn">
-            <input type="radio" id="dessert" value="Dessert" name="btn"><label for="dessert">Dessert</label>  
-          </div>
-          <div class="radio-btn">
-            <input type="radio" id="entire-meal" value="Entire Meal" name="btn"><label for="entire-meal">Entire Meal</label>  
-          </div>
-          <button class="lets-cook-btn">LET'S COOK!</button>
-      </div>
-      <div class="box">
-        <div id="pot-img">
-          <img src="/Users/nate/Mod_1/whats-for-dinner/assets/cookpot.svg" alt="Image of cooking pot">
+  <head>
+    <title>What's For Dinner?</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class='nav'>
+      <h3 class="title">What's for Dinner?</h3>
+      <!-- <button class="add-recipe-btn">ADD A RECIPE</button> -->
+    </nav>
+      <section class="parent1">
+        <div class="box">
+          <h3>What are you looking for?</h3>
+            <div class="radio-btn">
+              <input type="radio" id="side" value="Side" name="btn"><label for="side">Side</label>
+            </div>
+            <div class="radio-btn">
+              <input type="radio" id="main-dish" value="Main Dish" name="btn"><label for="main-dish">Main Dish</label>  
+            </div>
+            <div class="radio-btn">
+              <input type="radio" id="dessert" value="Dessert" name="btn"><label for="dessert">Dessert</label>  
+            </div>
+            <div class="radio-btn">
+              <input type="radio" id="entire-meal" value="Entire Meal" name="btn"><label for="entire-meal">Entire Meal</label>  
+            </div>
+            <button class="lets-cook-btn">LET'S COOK!</button>
         </div>
-        <div class="you-should-make hide">
-          <p id="output">You should make:</p>
-          <p id="array-output">This will be recipe to make</p>
+        <div class="box">
+          <div id="pot-img">
+            <img src="/Users/nate/Mod_1/whats-for-dinner/assets/cookpot.svg" alt="Image of cooking pot">
+          </div>
+          <div class="you-should-make hide">
+            <p id="output">You should make:</p>
+            <p id="array-output">This will be recipe to make</p>
+          </div>
         </div>
-      </div>
-    </section>
-</body>
-<script type="text/javascript" src="main.js"></script>
+      </section>
+  </body>
+  <script type="text/javascript" src="main.js"></script>
 </html>
