@@ -40,7 +40,7 @@ body {
 }
 
 .box {
-  width: 250px;
+  width: 40%;
   height: 220px;
   border: 10px;
   padding: 20px;
@@ -63,10 +63,17 @@ body {
 }
 
 #pot-img {
-  background-size: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(/Users/nate/Mod_1/whats-for-dinner/assets/cookpot.svg);  
+  width: 100%;
+  max-width: 100px;
+  margin: auto;
+  padding-top: 15%;
+}
+
+.you-should-make {
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
 }
 
 .lets-cook-btn {
@@ -76,4 +83,8 @@ body {
   border: 0;
   padding: 7px 40px 7px;
   margin-top: 5px;
+}
+
+.hide {
+  display: none;
 }

@@ -1,10 +1,13 @@
 //querySeletor 
-var radioBtn = document.querySelector('#side');
-var letsCookbtn = document.querySelector('.lets-cook-btn');
-var outPut = document.querySelector('#outPut');
+var radioBtn = document.querySelector('#side'),
+    letsCookbtn = document.querySelector('.lets-cook-btn'),
+    outPut = document.querySelector('#outPut'),
+    hidePotImg = document.querySelector('#pot-img'),
+    displaytxt = document.querySelector('.you-should-make');
+ 
 //event listener 
 radioBtn.addEventListener('click', getRandomRecipe);
-letsCookbtn.addEventListener('click',displayRecipe)
+letsCookbtn.addEventListener('click', hidePot);
 //event handler
 function getRandomIndex(array) {
   return Math.floor(Math.random()*array.length)
@@ -13,12 +16,15 @@ function getRandomIndex(array) {
 function getRandomRecipe() {
   var randomRecipeIndex = getRandomIndex(sideRecipes);
   var randomRecipe = sideRecipes[randomRecipeIndex];
-  console.log(randomRecipe)
+  document.querySelector('#array-output').textContent = randomRecipe
 }
 
-function displayRecipe() {
-
+function hidePot() {
+  hidePotImg.classList.add('hide');
+  displaytxt.classList.remove('hide');
+  getRandomRecipe();
 }
+
 
 
 var dessertRecipes = ['Apple Pie','Lemon Meringue Pie','Black Forest Cake','Banana Bread','Peach Cobbler','Cheesecake','Funfetti Cake','Baklava','Flan','Macarons','Macaroons','Chocolate Cupcakes','Pavlova','Pumpkin Pie','Key Lime Pie','Tart Tatin','Croissants','Eclairs'];
