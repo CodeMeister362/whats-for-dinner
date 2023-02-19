@@ -29,16 +29,14 @@ function getRandomRecipe() {
         randomRecipe = dessertRecipes[randomRecipeIndex];
   }
   if (entireMeal.checked) {
-    var randomRecipeIndex = getRandomIndex(mainRecipes,dessertRecipes,sideRecipes),
-        randomRecipe1 = mainRecipes[randomRecipeIndex],
-        // randomRecipeIndex = getRandomIndex(dessertRecipes),
-        randomRecipe3 = dessertRecipes[randomRecipeIndex],
-        // randomRecipeIndex = getRandomIndex(sideRecipes),
-        randomRecipe2 = sideRecipes[randomRecipeIndex];
-
-    var randomRecipe123 = randomRecipe1 + randomRecipe2 + randomRecipe3;
+    var randomRecipeIndex1 = getRandomIndex(mainRecipes),
+        randomRecipe1 = mainRecipes[randomRecipeIndex1],
+        randomRecipeIndex2 = getRandomIndex(sideRecipes),
+        randomRecipe2 = sideRecipes[randomRecipeIndex2],
+        randomRecipeIndex3 = getRandomIndex(dessertRecipes),
+        randomRecipe3 = dessertRecipes[randomRecipeIndex3];
+    return document.querySelector('#array-output').textContent = `${randomRecipe1} with a side of ${randomRecipe2} and ${randomRecipe3} for dessert!`;
   }
-  console.log(randomRecipe123)
   document.querySelector('#array-output').textContent = (randomRecipe)
 }
 

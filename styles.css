@@ -88,3 +88,11 @@ body {
 .hide {
   display: none;
 }
+
+#output {
+  font-style: italic;
+}
+
+#array-output {
+  font-size: 20px;
+}
