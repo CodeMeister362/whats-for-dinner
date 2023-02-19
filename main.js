@@ -29,10 +29,17 @@ function getRandomRecipe() {
         randomRecipe = dessertRecipes[randomRecipeIndex];
   }
   if (entireMeal.checked) {
-    var randomRecipeIndex = getRandomIndex(sideRecipes),
-        randomRecipe = sideRecipes[randomRecipeIndex];
+    var randomRecipeIndex = getRandomIndex(mainRecipes,dessertRecipes,sideRecipes),
+        randomRecipe1 = mainRecipes[randomRecipeIndex],
+        // randomRecipeIndex = getRandomIndex(dessertRecipes),
+        randomRecipe3 = dessertRecipes[randomRecipeIndex],
+        // randomRecipeIndex = getRandomIndex(sideRecipes),
+        randomRecipe2 = sideRecipes[randomRecipeIndex];
+
+    var randomRecipe123 = randomRecipe1 + randomRecipe2 + randomRecipe3;
   }
-  document.querySelector('#array-output').textContent = randomRecipe
+  console.log(randomRecipe123)
+  document.querySelector('#array-output').textContent = (randomRecipe)
 }
 
 function hidePot() {
@@ -43,7 +50,7 @@ function hidePot() {
 
 
 
-var dessertRecipes = ['Apple Pie','Lemon Meringue Pie','Black Forest Cake','Banana Bread','Peach Cobbler','Cheesecake','Funfetti Cake','Baklava','Flan','Macarons','Macaroons','Chocolate Cupcakes','Pavlova','Pumpkin Pie','Key Lime Pie','Tart Tatin','Croissants','Eclairs'],
+var  dessertRecipes = ['Apple Pie','Lemon Meringue Pie','Black Forest Cake','Banana Bread','Peach Cobbler','Cheesecake','Funfetti Cake','Baklava','Flan','Macarons','Macaroons','Chocolate Cupcakes','Pavlova','Pumpkin Pie','Key Lime Pie','Tart Tatin','Croissants','Eclairs'],
      mainRecipes = ['Spaghetti and Meatballs','Pineapple Chicken','Shakshuka','Thai Yellow Curry','Bibimbap','Chicken Parmesean','Butternut Squash Soup','BBQ Chicken Burgers','Ramen','Empanadas','Chicken Fried Rice','Sheet Pan Fajitas','Margarita Pizza'],
      sideRecipes = ['Miso Glazed Carrots','Coleslaw','Garden Salad','Crispy Potatoes','Sweet Potato Tots','Coconut Rice','Caeser Salad','Shrimp Summer Rolls','Garlic Butter Mushrooms','Hush Puppies'],
      entireMealRecipes = [];
